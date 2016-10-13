@@ -51,4 +51,5 @@ Você pode ainda dexá-lo ouvindo as alterações dos seus javacripts mapeados e
 ```console
 $ webpack --watch
 ```
-### [Personal Site](http://fabriciojf.com)
+### Tips info 
+ - [Personal Site](http://fabriciojf.com)
