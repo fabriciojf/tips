@@ -20,3 +20,9 @@ $ apt-get install nodejs-legacy
 ```console
 $ sudo npm install -g angular-cli webpack bower express nodemon http-server
 ```
+
+### Installing Mongodb - Debian
+```console
+$ sudo apt-get update  
+$ sudo apt-get install mongodb-server -y 
+```
