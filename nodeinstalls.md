@@ -1,5 +1,7 @@
 # Facilities for my development environment 
 
+Based on a debian environment
+
 ### Installing Node.js
 ```console
 $ sudo apt-get install g++
