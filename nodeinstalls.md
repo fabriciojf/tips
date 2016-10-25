@@ -12,6 +12,12 @@ $ make install
 $ apt-get install nodejs-legacy
 ```
 
+### Installing Node-express
+Used to create projects by express command line
+```console
+$ sudo apt-get install node-express
+```
+
 ### Suggested global Packages
   - angular-cli
   - webpack
