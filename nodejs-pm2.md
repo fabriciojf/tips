@@ -1,29 +1,29 @@
-### Running pm2 in production
+# Running pm2 in production
 
-Basic
+### Basic
 
 ```console
 $ pm2 start file_start.js
 ```
-Clustering in 2 instances
+### Clustering in 2 instances
 
 ```console
 $ pm2 start file_start.js -i 2
 ```
-View active apps
+### View active apps
 
 ```console
 $ pm2 list
 ```
 
-Removing an app
+### Removing an app
 
 ```console
 $ pm2 delete <id>
 $ pm2 delete 0
 ```
 
-Others commands
+### Others commands
 
 ```console
 $ pm2 monit
