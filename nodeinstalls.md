@@ -58,6 +58,13 @@ View active apps
 $ pm2 list
 ```
 
+Removing an app
+
+```console
+$ pm2 delete <id>
+$ pm2 delete 0
+```
+
 Others commands
 
 ```console
