@@ -1,4 +1,9 @@
 # Running pm2 in production
+### Install
+
+```console
+$ sudo npm install pm2 -g
+```
 
 ### Basic
 
