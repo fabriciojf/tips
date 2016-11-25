@@ -51,7 +51,8 @@ $ sudo apt-get install node-express
   - pm2
   
 ```console
-$ sudo npm install -g angular-cli webpack bower express nodemon http-server pm2
+$ sudo npm install -g angular-cli webpack bower 
+$ sudo npm install -g express nodemon http-server pm2
 ```
 
 ### Installing Mongodb - Debian
