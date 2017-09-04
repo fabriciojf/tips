@@ -18,7 +18,14 @@ $ curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
 ```
 
-Option 3 - Making
+Option 3 - Node 8
+
+```console
+$ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+$ sudo apt-get install -y nodejs
+```
+
+Option 4 - Making
 ```console
 $ sudo apt-get install g++
 $ wget -N http://nodejs.org/dist/node-latest.tar.gz
@@ -60,4 +67,11 @@ $ sudo npm install -g express nodemon http-server pm2
 ```console
 $ sudo apt-get update  
 $ sudo apt-get install mongodb-server -y 
+```
+### Install BmAPI
+
+```console
+$ sudo apt-get install mongodb-server -y
+$ sudo apt-get install node-express
+$ sudo npm install -g express nodemon http-server pm2
 ```
