@@ -20,7 +20,7 @@ Consolida as alterações adicionadas ao commit, com uma descrição
 git commit -m ‘commit descritpion’
 ```
 
-Adiciona e consolidada as alterações, mas não adiciona novos arquivos
+Adiciona e consolida as alterações, mas não adiciona novos arquivos
 
 ```console
 git commit -a -m “commit description”
