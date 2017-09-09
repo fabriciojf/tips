@@ -1,4 +1,4 @@
-[Repositório]
+### [Repositório]
 
 Cria um repositório git para acesso remoto
 
@@ -6,7 +6,7 @@ Cria um repositório git para acesso remoto
 git –bare init
 ```
 
-[Commits]
+### [Commits]
 
 Adiciona todas as alterações, inclusive arquivos novos,  para commit
 
@@ -27,7 +27,7 @@ git commit -a -m “commit description”
 ```
 
 
-[ Branchs ]
+### [ Branchs ]
 
 Cria um branch novo apartir do branch atual
 
@@ -101,7 +101,7 @@ Para renomear branch
 git branch -m old_branch new_branch
 ```
 
-[Log]
+### [Log]
 
 Mostra o que foi alterado em cada commit em um arquivo
 
@@ -133,7 +133,7 @@ Desfaz as alterações consolidadas depois do commit específicado
 git reset –hard SHA1DOCOMMIT
 ```
 
-[Whatchanged]
+### [Whatchanged]
 
 Mostra quais arquivos foram alterados em cada commit
 
@@ -147,7 +147,7 @@ Mostra quais arquivos foram alterados em cada commit de um autor específico
 git whatchanged –author=Name Author
 ```
 
-[Checkout]
+### [Checkout]
 
 Desfaz as alterações não consolidadas no branch atual
 
@@ -167,7 +167,7 @@ Limpa um branch e realiza o pull do servidor para um único branch
 git checkout -b nomeDoBranch origin/nomeDoBranch
 ```
 
-[Ignore]
+### [Ignore]
 
 Para ignorar arquivos já existentes em seu projeto
 
@@ -188,7 +188,7 @@ git ls-files -v | grep “h ”
 ```
 O espaço depois do ‘h’ é obrigatório
 
-[Tags]
+### [Tags]
 
 Realiza o push e envia as tags criadas para o remote
 
@@ -214,7 +214,7 @@ Envia uma tag criada localmente para o remote
 git push origin tag_name
 ```
 
-[Revert]
+### [Revert]
 
 Para reverter um arquivo para uma determinada versão
 
@@ -228,7 +228,7 @@ Para reverter para um determinado commit criando um novo commit
 git revert SHA1
 ```
 
-[Reset]
+### [Reset]
 
 Para reverter para um determinado commit
 
@@ -242,7 +242,7 @@ Para reverter o último commit
 git reset –hard HEAD^
 ```
 
-[Stash]
+### [Stash]
 
 Move as alterações não adicionadas ao commit para memoria tempoária e limpa o branch das alterações. Este comando deve ser usada quando precisarmos mudar de branch sem commitar as mudanças atuais.
 
