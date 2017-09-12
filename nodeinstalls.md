@@ -68,7 +68,7 @@ $ sudo npm install -g express nodemon http-server pm2
 $ sudo apt-get update  
 $ sudo apt-get install mongodb-server -y 
 ```
-### Install BmAPI
+### Install BmAPI / Speedcob
 
 ```console
 $ sudo apt-get install mongodb-server -y
