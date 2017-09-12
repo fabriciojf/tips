@@ -1,0 +1,120 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;; This is the configuration file for the Khomp ;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;; channel version 4.0 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[channels]
+
+echo-canceller = yes
+auto-gain-control = no
+
+;;;;
+;;
+;; Contextos FXO, GSM e E1
+;;
+;; context-digital = khomp-DD-LL
+
+context-fxs = khomp-DD
+fxs-digit-timeout = 4
+
+;; context-fxs = from-internal
+;; context-fxs-alt =khomp-DD-CC
+;; context-fxo = khomp-DD-CC
+;; context-fxo-alt = khomp-DD
+;; context-gsm-call = khomp-DD-CC
+;; context-gsm-sms = khomp-DD-CC
+;; context-gsm-call-alt = khomp-DD
+;; context-gsm-wait = khomp-wait-DD-CC
+;; context-pr = khomp-DD-CC
+;;;;
+
+context-digital = from-pstn
+context-gsm-call = from-pstn
+context-gsm-sms = from-sms
+
+;;;;
+;;
+;; Volumes de entrada e saida
+;;
+;;;;
+
+output-volume = 0
+input-volume = 0
+
+callgroup = 1
+pickupgroup = 1
+
+; language = pt_BR
+; mohclass = default
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; Grupos ex:
+;; oi = b0c1-10 ;; grupo oi utilizando os canais de 1 a 10
+;; tim = b0c1 + b0c4-6 ;; grupo tim usando os canais 1,4,5,6 
+;;
+;; Para utilizar um grupo, va no extensions.conf e crie um 
+;; plano de discagem com a seguinte sintaxe:
+;;
+;; ex1: exten => _X.,1,Dial(khomp/Goi/${EXTEN})
+;; ex2: exten => _X.,1,Dial(khomp/Gtim/${EXTEN})
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+fxs-global-orig = 00
+
+[groups]
+
+bytim = b2c0-1
+byclaro = b2c2-3
+byoi = b2c4-7
+byvivo = b1c0-1
+
+[cadences]
+
+;; Default value for cadences. You may define your own cadences, and
+;; also use them in the Dial arguments as "ring_cadence=your_cadence_name".
+;; 
+;; "0,0" means a continuous dialtone, only valid for audio generation
+;; (i.e. cannot be used for ringing an FXS channel).
+;;
+;; (default as defined below, independent of compatibility mode,
+;; and only to be used in Dial arguments)
+
+; co-dialtone  = 0,0
+; vm-dialtone  = 1000,100,100,100
+; pbx-dialtone = 1000,100
+; fast-busy    = 100,100
+; ringback     = 1000,4000
+; waiting-call = 100,100,100,3700
+; ring         = 1000,4000
+
+
+
+[fxs-branches]
+[fxs-hotlines]
+[fxs-options]
+00 = calleridnum:5000|calleridname:5000|pickupgroup:1|callgroup:1
+01 = calleridnum:5001|calleridname:5001|pickupgroup:1|callgroup:1
+02 = calleridnum:5010|calleridname:5010|pickupgroup:1|callgroup:1
+03 = calleridnum:5029|calleridname:5029|pickupgroup:1|callgroup:1
+04 = calleridnum:5013|calleridname:5013|pickupgroup:1|callgroup:1
+05 = calleridnum:5014|calleridname:5014|pickupgroup:1|callgroup:1
+06 = calleridnum:5016|calleridname:5016|pickupgroup:1|callgroup:1
+07 = calleridnum:5018|calleridname:5018|pickupgroup:1|callgroup:1
+08 = calleridnum:5020|calleridname:5020|pickupgroup:1|callgroup:1
+09 = calleridnum:5021|calleridname:5021|pickupgroup:1|callgroup:1
+10 = calleridnum:5022|calleridname:5022|pickupgroup:1|callgroup:1
+11 = calleridnum:5023|calleridname:5023|pickupgroup:1|callgroup:1
+12 = calleridnum:5024|calleridname:5024|pickupgroup:1|callgroup:1
+13 = calleridnum:5025|calleridname:5025|pickupgroup:1|callgroup:1
+14 = calleridnum:5026|calleridname:5026|pickupgroup:1|callgroup:1
+15 = calleridnum:5027|calleridname:5027|pickupgroup:1|callgroup:1
+16 = calleridnum:5028|calleridname:5028|pickupgroup:1|callgroup:1
+17 = calleridnum:5030|calleridname:5030|pickupgroup:1|callgroup:1
+18 = calleridnum:5032|calleridname:5032|pickupgroup:1|callgroup:1
+19 = calleridnum:5033|calleridname:5033|pickupgroup:1|callgroup:1
+20 = calleridnum:5034|calleridname:5034|pickupgroup:1|callgroup:1
+21 = calleridnum:5035|calleridname:5035|pickupgroup:1|callgroup:1
+22 = calleridnum:5036|calleridname:5036|pickupgroup:1|callgroup:1
+23 = calleridnum:5039|calleridname:5039|pickupgroup:1|callgroup:1
