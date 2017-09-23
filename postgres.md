@@ -51,7 +51,7 @@ $ psql -U postgres -d speedcob_beta -f ./0.0.1.sql
 Comandos dentro do usuário postgres
 
 | Comando | Descricao |
-| :---: | --- |
+| --- | --- |
 | psql -l |  lista os bancos de dados existentes |
 | psql -U postgres nome_do_banco |  conecta ao banco desejado |
 | psql banco -E |  Mostra um debug das consultas realizadas |
@@ -63,7 +63,7 @@ Comandos dentro do usuário postgres
 Comandos dentro do console
 
 | Comando | Descricao |
-| :---: | --- |
+| --- | --- |
 | \q | sair |
 | \c nomebanco nomeuser | Conectar a outro banco |
 | \i /path/script.sql | importar script.sql |
