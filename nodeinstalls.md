@@ -75,3 +75,12 @@ $ sudo apt-get install mongodb-server -y
 $ sudo apt-get install node-express
 $ sudo npm install -g express nodemon http-server pm2
 ```
+
+### PM2 Upgrade
+
+Updating pm2 monit view
+
+```console
+$ npm update -g pm2  
+$ pm2 update  
+```
