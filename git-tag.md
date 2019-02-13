@@ -45,28 +45,3 @@ $ git log --pretty=oneline
 $ git tag -a 1.0.0 28a4b531bb25b6536060bbe827d23c0d5b4dc1dc
 $ git push origin master --tags
 ```
-
-## Listando tags criadas
-
-```console
-$ git tag
-$ git tag -l
-```
-
-## Analisando uma Tag específica
-
-```console
-$ git show 1.0.0
-```
-
-## Clonando uma Tag (Versão)
-
-```console
-$ git clone -b 1.0.0 https://USER@DOMAIN/FOLDER/PROJECT.git FOLDER
-```
-
-## Revertendo a versão do código para uma Tag específica
-
-```console
-$ git checkout tags/1.0.0
-```
