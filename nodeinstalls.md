@@ -25,7 +25,22 @@ $ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
 ```
 
+For Node 10
+
+```console
+sudo apt-get install curl software-properties-common
+curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+```
+
+For Node 11
+
+```console
+sudo apt-get install curl software-properties-common
+curl -sL https://deb.nodesource.com/setup_11.x | sudo bash -
+```
+
 Option 4 - Making
+
 ```console
 $ sudo apt-get install g++
 $ wget -N http://nodejs.org/dist/node-latest.tar.gz
