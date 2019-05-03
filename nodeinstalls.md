@@ -53,6 +53,22 @@ Extras
 ```console
 $ sudo apt-get install build-essential nodejs-legacy
 ```
+### Installing Node 10 in Debian 7 (wheezy)
+(obs: execute with root privilegies)
+
+```console
+# wget https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh
+# chmod +x install.sh
+# ./install.sh
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+# nvm ls-remote
+# nvm install v10.15.3
+# npm i -g pm2  nodemon
+# cd /usr/bin
+# npm link pm2
+```
 
 ### Installing Node-express
 
