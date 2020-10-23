@@ -2,7 +2,7 @@
 
 ### Shield.io All Icons 
 
-* (Simple Icons)[https://simpleicons.org/]
+* [Simple Icons](https://simpleicons.org/)
 
 ### Custom icon URL structure
 
