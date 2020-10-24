@@ -2,6 +2,39 @@
 
 Based on a debian environment
 
+## Updated 2020/10
+
+Install nvm, the nodejs version manager. Try this:
+
+```command
+$ curl https://raw.githubusercontent.com/creationix/nvm/v0.35.2/install.sh | bash
+```
+To know more about nvm see [nvm on github](https://github.com/nvm-sh/nvm)
+
+
+Run the commands below to know more about nvm system
+
+```command
+# see all options / help
+$ nvm --help 
+or just
+$ $nvm
+
+# listing local packages
+$ nvm ls
+
+# listing remote packages
+$ nvm ls remote
+
+# install specific node version
+$ nvm install 14.0.0
+
+# if you have 2 or more versions in your environment, select the desired version with the command
+$ mvn use 10.0.0
+```
+
+## Old Post
+
 ### Installing Node.js
 
 Option 1 - Node 6
