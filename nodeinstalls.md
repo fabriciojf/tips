@@ -18,7 +18,7 @@ Run the commands below to know more about nvm system
 # see all options / help
 $ nvm --help 
 or just
-$ $nvm
+$ nvm
 
 # listing local packages
 $ nvm ls
@@ -30,7 +30,7 @@ $ nvm ls remote
 $ nvm install 14.0.0
 
 # if you have 2 or more versions in your environment, select the desired version with the command
-$ mvn use 10.0.0
+$ nvm use 10.0.0
 ```
 
 ## Old Post
