@@ -33,6 +33,18 @@ $ nvm install 14.0.0
 $ nvm use 10.0.0
 ```
 
+### NVM Error
+
+bash: /usr/bin/nvm: Arquivo ou diretório não encontrado
+
+=> nvm is already installed in /home/USER/.nvm, trying to update using git
+=> Failed to update nvm, run 'git fetch' in /home/USER/.nvm yourself.
+
+```console
+$ export NVM_DIR=~/.nvm
+$ source ~/.nvm/nvm.sh
+```
+
 ## Old Post
 
 ### Installing Node.js
